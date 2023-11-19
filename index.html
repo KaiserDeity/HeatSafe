@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeatSafe</title>
     <link rel="shortcut icon" href="img/loguito.png">
-    <link rel="stylesheet" href="./Css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="./css/estilos.css" type="text/css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header" id="inicio">
-        <img src="./Imgs/bx-menu.svg" alt="" class="hamburger">
+        <img src="./img/bx-menu.svg" alt="" class="hamburger">
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#servicio">Servicio</a>
@@ -23,7 +23,7 @@
         </nav>
         <div class="contenedor head">
             <h1 class="titulo">Heatsafe: Tu Solución en Detección de Incendios</h1>
-            <p class="copy">La Innovación Tecnológica en la Prevención de Incendios</p>
+            <p class="copy">Bienvenido a HeatSafe <p id="usuarioGOD"></p></p>
         </div>
     </header>
     <main>
@@ -87,7 +87,6 @@
             <div class="contact-us">
                 <a href="heatsafe.html" class="nolink"><h2 class="brand">HeatSafe</h2></a>
                 <p>La Innovación Tecnológica en la Prevención de Incendios</p>
-                <a href="iniciosesion.html" class="nolink"><p>Inicio de sesion</p></a>
             </div>
             <div class="social-media">
                 <a href="https://facebook.com/" class="social-media-icon">
@@ -107,6 +106,9 @@
     
     <script src="Js/menu.js"></script>
     <script src="Js/lightbox.js"></script>
+    <script>
+        document.getElementById("usuarioGOD").innerHTML = localStorage.usuario;
+    </script>
 </body>
 </html>
         
